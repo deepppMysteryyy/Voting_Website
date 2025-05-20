@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="/register" method="post" align="center">
+        <fieldset><br>
+            <label for="username"><b>USERNAME :</b></label>
+            <input type="text" name="username" id="username" required><br><br>
+            <label for="password"><b>PASSWORD :</b></label>
+            <input type="password" name="password" id="password" required><br><br>
+            <label for="email"><b>EMAIL ID :</b></label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="phone"><b>PHONE NO. :</b></label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required><br><br>
+            <input type="submit" name="REGISTER" value="Register" onclick="location.href='server.js'">
+            <input type="button" name="LOGIN" value="Login" onclick="location.href='Login.html';">
+        </fieldset>
+    </form><br><br>
+    <script src="register.js"></script>
+</body>
+</html>
